@@ -5,54 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessandro Wisnu Tegar Tri Ekayudi</title>
+    <!-- Font modern untuk UI & Monospace untuk nuansa developer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <h1>Alessandro Wisnu Tegar Tri Ekayudi</h1>
-    <figure>
-        <img src="/images/wisnu.jpeg" alt="wisnu_photo">
-        <figcaption>"f it we ball"</figcaption>
-    </figure>
+<body id="profile-body">
+    <main id="main-container">
+        <!-- Bagian Header & Foto Utama -->
+        <header id="hero-section">
+            <h1 id="profile-name">Alessandro Wisnu Tegar Tri Ekayudi</h1>
+            <figure id="avatar-figure">
+                <img id="avatar-img" src="/images/wisnu.jpeg" alt="wisnu_photo">
+                <figcaption id="avatar-quote">"f it we ball"</figcaption>
+            </figure>
+        </header>
 
-    <div>
-        <p>Hobi : Game</p>
-        <h3>Keahlian :</h3>
-        <ul>
-            <li>Bahasa pemrograman: Java, Javascript</li>
-            <li><i>Framework</i>: Node.js, springboot</li>
-            <li><i>Soft-Skill</i>:
-                <ul>
-                    <li><i>Teamwork</i></li>
-                    <li><i>Problem Solving</i></li>
+        <!-- Bagian Biodata & Keahlian -->
+        <section id="bio-section">
+            <div id="quick-info">
+                <p id="hobby-text">Hobi : Game</p>
+                <p id="spirit-text">Animal Spirit : Kucing</p>
+            </div>
+
+            <div id="skills-wrapper">
+                <h3 id="skills-title">Keahlian :</h3>
+                <ul id="skills-list">
+                    <li class="skill-category">Bahasa pemrograman: Java, Javascript</li>
+                    <li class="skill-category"><i>Framework</i>: Node.js, springboot</li>
+                    <li class="skill-category"><i>Soft-Skill</i>:
+                        <ul id="soft-skills-list">
+                            <li><i>Teamwork</i></li>
+                            <li><i>Problem Solving</i></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-        <p>Animal Spirit : Kucing</p>
-    </div>
+            </div>
+        </section>
 
-    <div>
-        <h2>Aktivitas Terakhir</h2>
+        <!-- Bagian Aktivitas & Dokumentasi -->
+        <section id="activities-section">
+            <h2 id="activities-title">Aktivitas Terakhir</h2>
 
-        <p>Menjadi Wakil Koordinator Logistik program kerja Science Fest 2026</p>
-    </div>
+            <article class="activity-card" id="activity-1">
+                <div class="activity-desc">
+                    <p>Menjadi Wakil Koordinator Logistik program kerja Science Fest 2026</p>
+                </div>
+                <figure class="activity-figure">
+                    <img class="activity-img" src="/images/wisnu_activity.JPG" alt="science_fest">
+                    <figcaption>Dokumentasi</figcaption>
+                </figure>
+            </article>
 
-    <figure>
-        <img src="/images/wisnu_activity.JPG" alt="science_fest">
+            <article class="activity-card" id="activity-2">
+                <div class="activity-desc">
+                    <p>Menjadi Koordinator Logistik program kerja SIAP Fakultas Sains 2026</p>
+                </div>
+                <figure class="activity-figure">
+                    <img class="activity-img" src="/images/wisnu_activity_2.jpeg" alt="siap_fakultas_sains">
+                    <figcaption>Dokumentasi</figcaption>
+                </figure>
+            </article>
+        </section>
 
-        <figcaption>Dokumentasi</figcaption>
-    </figure>
+        <!-- Navigasi Kembali -->
+        <footer id="profile-footer">
+            <a id="back-btn" href="/index.html">Go Back</a>
+        </footer>
+    </main>
 
-    <div>
-        <p>Menjadi Koordinator Logistik program kerja SIAP Fakultas Sains 2026</p>
-    </div>
-
-    <figure>
-        <img src="/images/wisnu_activity_2.jpeg" alt="science_fest">
-
-        <figcaption>Dokumentasi</figcaption>
-    </figure>
-
-    <a href="/index.html">Go Back</a>
+    <!-- Eksternal JavaScript -->
+    <script src="wisnu_script.js"></script>
 </body>
 
 </html>
